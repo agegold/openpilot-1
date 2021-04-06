@@ -444,7 +444,7 @@ static void bb_ui_draw_measures_right(UIState *s, int bb_x, int bb_y, int bb_w )
     // temp is alway in C * 1000
     snprintf(val_str, sizeof(val_str), "%.1f°", batteryTemp);
     snprintf(uom_str, sizeof(uom_str), "");
-    bb_h +=bb_ui_draw_measure(s,  val_str, uom_str, "BAT TEMP",
+    bb_h +=bb_ui_draw_measure(s,  val_str, uom_str, "배터리 온도",
         bb_rx, bb_ry, bb_uom_dx,
         val_color, lab_color, uom_color,
         value_fontSize, label_fontSize, uom_fontSize );
@@ -462,7 +462,7 @@ static void bb_ui_draw_measures_right(UIState *s, int bb_x, int bb_y, int bb_w )
 
     snprintf(val_str, sizeof(val_str), "%d%%", batteryPercent);
     snprintf(uom_str, sizeof(uom_str), "");
-    bb_h +=bb_ui_draw_measure(s,  val_str, uom_str, "BAT LVL",
+    bb_h +=bb_ui_draw_measure(s,  val_str, uom_str, "배터리 충전량",
         bb_rx, bb_ry, bb_uom_dx,
         val_color, lab_color, uom_color,
         value_fontSize, label_fontSize, uom_fontSize );
@@ -477,7 +477,7 @@ static void bb_ui_draw_measures_right(UIState *s, int bb_x, int bb_y, int bb_w )
 
     snprintf(val_str, sizeof(val_str), "%.1f", s->scene.gps_ext.getAltitude());
     snprintf(uom_str, sizeof(uom_str), "m");
-    bb_h +=bb_ui_draw_measure(s,  val_str, uom_str, "ALTITUDE",
+    bb_h +=bb_ui_draw_measure(s,  val_str, uom_str, "고도",
         bb_rx, bb_ry, bb_uom_dx,
         val_color, lab_color, uom_color,
         value_fontSize, label_fontSize, uom_fontSize );
@@ -512,7 +512,7 @@ static void bb_ui_draw_measures_right(UIState *s, int bb_x, int bb_y, int bb_w )
 
     snprintf(val_str, sizeof(val_str), "%.2f", gpsAccuracy);
     snprintf(uom_str, sizeof(uom_str), "m");
-    bb_h +=bb_ui_draw_measure(s,  val_str, uom_str, "GPS PREC",
+    bb_h +=bb_ui_draw_measure(s,  val_str, uom_str, "GPS 정확도",
         bb_rx, bb_ry, bb_uom_dx,
         val_color, lab_color, uom_color,
         value_fontSize, label_fontSize, uom_fontSize );
@@ -530,7 +530,7 @@ static void bb_ui_draw_measures_right(UIState *s, int bb_x, int bb_y, int bb_w )
 
     snprintf(val_str, sizeof(val_str), "%d", s->scene.satelliteCount > 0 ? s->scene.satelliteCount : 0);
     snprintf(uom_str, sizeof(uom_str), "");
-    bb_h +=bb_ui_draw_measure(s,  val_str, uom_str, "SATELLITE",
+    bb_h +=bb_ui_draw_measure(s,  val_str, uom_str, "위성갯수",
         bb_rx, bb_ry, bb_uom_dx,
         val_color, lab_color, uom_color,
         value_fontSize, label_fontSize, uom_fontSize );
