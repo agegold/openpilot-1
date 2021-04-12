@@ -163,7 +163,7 @@ SetupWidget::SetupWidget(QWidget* parent) : QFrame(parent) {
   QVBoxLayout* finishRegistationLayout = new QVBoxLayout;
   finishRegistationLayout->setMargin(30);
 
-  QLabel* registrationDescription = new QLabel("neokii_083_KOREAN\nThanks to neokii\n  OPENPILOT");
+  QLabel* registrationDescription = new QLabel("주행중에는 손은 핸들에\n시선은 전방으로\n  안전운전 하세요");
   registrationDescription->setWordWrap(true);
   registrationDescription->setAlignment(Qt::AlignCenter);
   registrationDescription->setStyleSheet(R"(
